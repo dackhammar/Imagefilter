@@ -10,8 +10,7 @@ Description: Image filtering functions that takes an image and converts it to
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    EBImage,
+Depends:
     magick
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

@@ -2,8 +2,5 @@
 
 export(image_cutoff)
 export(image_grey)
-importFrom(EBImage,channel)
-importFrom(EBImage,readImage)
-importFrom(EBImage,writeImage)
 importFrom(magick,image_read)
 importFrom(magick,image_write)
