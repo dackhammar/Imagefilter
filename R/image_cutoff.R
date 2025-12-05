@@ -1,14 +1,22 @@
 #' @title image_cutoff
 #'
+#' @description
+#' Takes a rgb image and applies a cut-off filter where pixels with #808080 gets
+#' colored pink #FF00FF and other pixels #000000.
+#'
 #' @param x image you have
 #' @param y name of the output figure
 #'
 #' @return cutoff figures
 #'
+#' @importFrom magick image_read
+#' @importFrom magick image_write
+#'
 #' @examples
 #' image_cutoff("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwyTL9drJIaBbGx_-p8ogSLh_9DcPVDM8mQ&s","test.jpg")
 #'
-image_cutoff <- function (x,y) {{{
+#' @export
+image_cutoff <- function (x,y) {
   pic<-image_read(x)
   bitmap<-pic[[1]]
   bitmap_cutoff<-bitmap
@@ -33,8 +41,8 @@ image_cutoff <- function (x,y) {{{
       i = i+1
     }
   }
+  output <- image_read(bitmap_cutoff)
+  image_write(output, y)
+  return(output)
 }
-
-  image_write(image_read(bitmap_cutoff), y)}
-  image_read(bitmap_cutoff)}
 
