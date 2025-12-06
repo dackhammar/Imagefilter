@@ -11,8 +11,11 @@
 #' @importFrom magick image_read
 #'
 #' @examples
-#' image_grey("https://jeroen.github.io/images/frink.png","test.jpg")
-#'
+#' \donttest{
+#' tmp <- tempfile(fileext = ".jpg")
+#' image_grey("https://jeroen.github.io/images/frink.png",tmp)
+#' }
+#' 
 #' @export
 image_grey <- function (x,y) {
   # Review notes:

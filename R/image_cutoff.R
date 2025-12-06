@@ -11,10 +11,16 @@
 #'
 #' @importFrom magick image_read
 #' @importFrom magick image_write
-#'
+#' 
 #' @examples
-#' image_cutoff("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwyTL9drJIaBbGx_-p8ogSLh_9DcPVDM8mQ&s","test.jpg")
-#'
+#' \donttest{
+#' tmp <- tempfile(fileext = ".jpg")
+#' image_cutoff(
+#'   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwyTL9drJIaBbGx_-p8ogSLh_9DcPVDM8mQ&s",
+#'   tmp
+#' )
+#' }
+#' 
 #' @export
 image_cutoff <- function (x,y) {
   pic<-image_read(x) # Read image

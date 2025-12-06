@@ -18,6 +18,9 @@ grey figures
 Takes a rgb image and converts it to grayscale.
 }
 \examples{
-image_grey("https://jeroen.github.io/images/frink.png","test.jpg")
+\donttest{
+tmp <- tempfile(fileext = ".jpg")
+image_grey("https://jeroen.github.io/images/frink.png",tmp)
+}
 
 }

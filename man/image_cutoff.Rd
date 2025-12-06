@@ -19,6 +19,12 @@ Takes a rgb image and applies a cut-off filter where pixels with #808080 gets
 colored pink #FF00FF and other pixels #000000.
 }
 \examples{
-image_cutoff("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwyTL9drJIaBbGx_-p8ogSLh_9DcPVDM8mQ&s","test.jpg")
+\donttest{
+tmp <- tempfile(fileext = ".jpg")
+image_cutoff(
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwyTL9drJIaBbGx_-p8ogSLh_9DcPVDM8mQ&s",
+  tmp
+)
+}
 
 }
