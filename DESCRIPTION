@@ -1,20 +1,19 @@
 Package: Imagefilter
 Type: Package
 Title: Image filter
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
-    person("Lin", "Chen", role = c("ctb","aut","cre"), email="lin.chen@ki.se"))
-Description: greyscale and cut-off
+    person("Lin", "Chen", role = c("ctb","aut","cre"), email="lin.chen@ki.se"),
+    person("Johan", "Blixt Dackhammar", role = c("ctb"), email="johan.blixt.dackhammar@ki.se"))
+Description: Image filtering functions that takes an image and converts it to
+    grayscale or applies cut-off filter.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    BiocManager,
-    dplyr,
     EBImage,
-    magick,
-    tidyverse
+    magick
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 URL: https://github.com/fdyulin/Imagefilter
 BugReports: https://github.com/fdyulin/Imagefilter/issues
